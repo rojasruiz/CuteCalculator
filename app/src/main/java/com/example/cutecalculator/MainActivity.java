@@ -1,6 +1,7 @@
 package com.example.cutecalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     final int PRODUCT = 3;
     final int DIVISION = 4;
     final int PERCENT = 5;
+    boolean nightMode = false;
 
     //Textviews declaration
     public TextView txtInput;
@@ -249,4 +251,14 @@ public class MainActivity extends AppCompatActivity {
         txtOperation.setText(operation);
     }
 
+    public void buttonTheme(View view) {
+
+        if (nightMode){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            nightMode=false;
+        }else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            nightMode=true;
+        }
+    }
 }
