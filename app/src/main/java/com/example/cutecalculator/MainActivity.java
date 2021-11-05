@@ -118,6 +118,12 @@ public class MainActivity extends AppCompatActivity {
                     lastOperation = PLUS;
                     setOperation();
                 }
+            }else{
+                if (!txtResult.getText().toString().equals("")) {
+                    txtInput.setText(txtResult.getText().toString());
+                    txtResult.setText("");
+                    buttonPlus(view);
+                }
             }
 
         }catch(Exception e){txtInput.setText("Error");}
@@ -141,6 +147,12 @@ public class MainActivity extends AppCompatActivity {
                     execute();
                     lastOperation = MINUS;
                     setOperation();
+                }
+            }else{
+                if (!txtResult.getText().toString().equals("")){
+                txtInput.setText(txtResult.getText().toString());
+                txtResult.setText("");
+                buttonMinus(view);
                 }
             }
         }catch(Exception e){txtInput.setText("Error");}
@@ -200,6 +212,12 @@ public class MainActivity extends AppCompatActivity {
                     lastOperation = PRODUCT;
                     setOperation();
                 }
+            }else{
+                if (!txtResult.getText().toString().equals("")) {
+                    txtInput.setText(txtResult.getText().toString());
+                    txtResult.setText("");
+                    buttonProduct(view);
+                }
             }
         }catch(Exception e){txtInput.setText("Error");}
     }
@@ -221,6 +239,12 @@ public class MainActivity extends AppCompatActivity {
                     execute();
                     lastOperation = DIVISION;
                     setOperation();
+                }
+            }else{
+                if (!txtResult.getText().toString().equals("")) {
+                    txtInput.setText(txtResult.getText().toString());
+                    txtResult.setText("");
+                    buttonDivide(view);
                 }
             }
         }catch(Exception e){txtInput.setText("Error");}

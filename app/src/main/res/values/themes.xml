@@ -27,7 +27,7 @@
 
     <style name="Theme.CuteCalculator.Day" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/pink_500</item>
+        <item name="colorPrimary">@color/pink_200</item>
         <item name="colorPrimaryVariant">@color/pink_200</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
